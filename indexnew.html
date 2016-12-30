@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="gallery">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,12 @@
   <script src="js/uikit.min.js"></script>
   <script src="js/angular.min.js"></script>
   <script src="js/components/slider.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js"></script>
+
+
 </head>
-<body>
+<body ng-controller="galleryCtrl">
   <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom" >
     <div class="uk-panel uk-panel-box uk-text-center ">
       <div class="uk-grid uk-margin-bottom ">
@@ -30,13 +34,24 @@
         </div>
       </div>
 
+      <div class="container slider">
+    <img ng-repeat="slide in slides" class="slide" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
 
-
+    <nav class="nav">
+      <div class="wrapper">
+        <ul class="dots">
+          <li class="dot" ng-repeat="slide in slides">
+            <a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+            ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
+          </ul></div>
+        </nav>
+      </div>
+      <!--
       <img src="images/bandw/3.jpg" alt="Such a nice car"  />
       <p>
         Such a beautifuul car
       </p>
-
+    -->
     </div>
   </div>
 </body>

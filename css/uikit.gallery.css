@@ -2316,6 +2316,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 2 */
   padding: 0;
   list-style: none;
+  float: right;
 }
 /*
  * 1. Space is allocated solely based on content dimensions
