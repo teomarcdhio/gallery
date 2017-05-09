@@ -1,23 +1,32 @@
+body{
+  text-align: center;
+}
+
+
 .top{
   clear: left;
   background-color: blue;
   margin: auto;
-  padding: 5px;
 }
 
+.menu{
+  clear: left;
+  background-color: green;
+  margin: auto;
+}
 
 .main{
   clear: left;
   background-color: red;
   max-height: 85vh;
   margin: auto;
-  padding: 5px;
 }
 
 .focus{
   clear: both;
-  text-align: center;
   max-height: 85vh;
+  max-width: 95vw;
+  margin: auto;
 }
 
 .previous{
@@ -26,10 +35,21 @@
   width: 33%;
 }
 
+#previous{
+  text-align: left;
+  padding-right: 0px;
+}
+
 .title{
   float: left;
   text-align: center;
   width: 33%;
+}
+
+#title{
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .next{
@@ -38,11 +58,26 @@
   width: 33%;
 }
 
+#next{
+  text-align: right;
+  padding-left: 0px;
+}
+
+.controls{
+  clear: both;
+
+}
+
+.info{
+  clear: left;
+  background-color: brown;
+  margin: auto;
+}
+
 .footer{
   clear: left;
   background-color: yellow;
   margin: auto;
-  padding: 5px;
 }
 
 img{
