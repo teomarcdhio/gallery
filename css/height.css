@@ -1,0 +1,51 @@
+.top{
+  clear: left;
+  background-color: blue;
+  margin: auto;
+  padding: 5px;
+}
+
+
+.main{
+  clear: left;
+  background-color: red;
+  max-height: 85vh;
+  margin: auto;
+  padding: 5px;
+}
+
+.focus{
+  clear: both;
+  text-align: center;
+  max-height: 85vh;
+}
+
+.previous{
+  float: left;
+  text-align: left;
+  width: 33%;
+}
+
+.title{
+  float: left;
+  text-align: center;
+  width: 33%;
+}
+
+.next{
+  float: left;
+  text-align: right;
+  width: 33%;
+}
+
+.footer{
+  clear: left;
+  background-color: yellow;
+  margin: auto;
+  padding: 5px;
+}
+
+img{
+  max-width: inherit;;
+  max-height: inherit;
+}
