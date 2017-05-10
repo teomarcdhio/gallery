@@ -1,30 +1,34 @@
 body{
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
+  font-size: 16px;
+  line-height: 0.3;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 .top{
   clear: left;
-  background-color: blue;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu{
   clear: left;
-  background-color: green;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
 }
 
 .main{
   clear: left;
-  background-color: red;
-  max-height: 85vh;
+  max-height: 80vh;
   margin: auto;
 }
 
 .focus{
   clear: both;
-  max-height: 85vh;
+  max-height: 80vh;
   max-width: 95vw;
   margin: auto;
 }
@@ -65,19 +69,17 @@ body{
 
 .controls{
   clear: both;
-
 }
 
 .info{
   clear: left;
-  background-color: brown;
   margin: auto;
 }
 
 .footer{
   clear: left;
-  background-color: yellow;
   margin: auto;
+  font-size: 10px;
 }
 
 img{
